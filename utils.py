@@ -1,6 +1,7 @@
 ## Please fill in all the parts labeled as ### YOUR CODE HERE
 
 import numpy as np
+from utils import *
 
 def dot_product(v1, v2):
     '''
@@ -48,5 +49,7 @@ def nearest_neighbor(target_vector, vectors):
         if cosine_similarity(target_vector,vectors[i]) > cosine_similarity(target_vector,vectors[nearest]):
             nearest = i
     return nearest
+
+
 
     
