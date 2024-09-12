@@ -13,11 +13,13 @@ def test_dot_product():
 def test_cosine_similarity():
     ### YOUR CODE HERE
     vector1 = np.array([1, 2, 3])
-    vector2 = np.array([1, 2, 3])
+
+    vector2 = np.array([4, 5, 6])
     
     result = cosine_similarity(vector1, vector2)
     
-    expected_result = 1
+    expected_result = 0.9759
+
     
     assert np.isclose(result, expected_result), f"Expected {expected_result}, but got {result}"
 
